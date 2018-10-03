@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:/Users/piotrtorczynski/Documents/Personal/RandomUserViewer/RandomUserViewer/Sources"
+      name = "Sources">
+      <Group
+         location = "group:Providers"
+         name = "Providers">
+         <FileRef
+            location = "group:FlowLayoutProvider.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Network"
+         name = "Network">
+         <Group
+            location = "group:Core"
+            name = "Core">
+            <FileRef
+               location = "group:APIError.swift">
+            </FileRef>
+            <FileRef
+               location = "group:APIClient.swift">
+            </FileRef>
+            <FileRef
+               location = "group:APIResponse.swift">
+            </FileRef>
+            <FileRef
+               location = "group:APIURLBuilder.swift">
+            </FileRef>
+            <FileRef
+               location = "group:APIRequest.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Builders"
+            name = "Builders">
+            <FileRef
+               location = "group:PokemonURLBuilder.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:DefaultAPIClient.swift">
+         </FileRef>
+         <Group
+            location = "group:Requests"
+            name = "Requests">
+            <FileRef
+               location = "group:PokemonsRequest.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Services"
+            name = "Services">
+            <FileRef
+               location = "group:APIPokemonsService.swift">
+            </FileRef>
+            <FileRef
+               location = "group:PokemonsService.swift">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:Models"
+         name = "Models">
+         <FileRef
+            location = "group:Move.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Sprites.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Pokemon.swift">
+         </FileRef>
+         <FileRef
+            location = "group:SpecificMove.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Extensions"
+         name = "Extensions">
+         <Group
+            location = "group:UIKit"
+            name = "UIKit">
+            <FileRef
+               location = "group:UIKit.UICollectionView.swift">
+            </FileRef>
+            <FileRef
+               location = "group:UIKit.UIImageView.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Foundation"
+            name = "Foundation">
+            <FileRef
+               location = "group:Foundation.URLComponents.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Foundation.URLRequest.swift">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:Screens"
+         name = "Screens">
+         <Group
+            location = "group:PokemonList"
+            name = "PokemonList">
+            <FileRef
+               location = "group:PokemonListView.swift">
+            </FileRef>
+            <FileRef
+               location = "group:PokemonListViewModel.swift">
+            </FileRef>
+            <FileRef
+               location = "group:PokemonCell.swift">
+            </FileRef>
+            <FileRef
+               location = "group:CarouselFlowLayout.swift">
+            </FileRef>
+            <FileRef
+               location = "group:PokemonListViewController.swift">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:Abstractions"
+         name = "Abstractions">
+         <Group
+            location = "group:UIKit"
+            name = "UIKit">
+            <FileRef
+               location = "group:ViewController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:View.swift">
+            </FileRef>
+            <FileRef
+               location = "group:CollectionViewCell.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Application"
+            name = "Application">
+            <FileRef
+               location = "group:ApplicationDependencies.swift">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:Protocols"
+         name = "Protocols">
+         <FileRef
+            location = "group:Reusable.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Services"
+         name = "Services">
+         <FileRef
+            location = "group:AppDelegate.swift">
+         </FileRef>
+         <FileRef
+            location = "group:ApplicationController.swift">
+         </FileRef>
+      </Group>
+   </Group>
+   <FileRef
+      location = "self:">
+   </FileRef>
+</Workspace>

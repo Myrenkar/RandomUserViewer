@@ -1,0 +1,5 @@
+
+#Dependencies
+github "realm/realm-cocoa"
+github "RxSwiftCommunity/RxRealm"
+github "ReactiveX/RxSwift" ~> 4.0
