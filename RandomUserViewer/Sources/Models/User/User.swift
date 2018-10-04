@@ -15,6 +15,15 @@ struct User: Decodable, UserEntityConvertible {
 
     var favourite = false
 
+    // MARK: Initialization
+
+    init(email: String, image: UserImage?, name: UserName, favourite: Bool) {
+        self.email = email
+        self.image = image
+        self.name = name
+        self.favourite = favourite
+    }
+
     // MARK: Decodable
 
     private enum CodingKeys: String, CodingKey {

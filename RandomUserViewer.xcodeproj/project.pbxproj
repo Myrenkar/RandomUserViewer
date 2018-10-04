@@ -7,9 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		732B9AAA21667017003D4076 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732B9AA721667017003D4076 /* Quick.framework */; };
+		732B9AAB21667017003D4076 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732B9AA821667017003D4076 /* RxTest.framework */; };
+		732B9AAC21667017003D4076 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732B9AA921667017003D4076 /* Nimble.framework */; };
+		732B9ABD21667126003D4076 /* APIURLBuilderStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732B9AB12166704E003D4076 /* APIURLBuilderStub.swift */; };
+		732B9ABE2166712A003D4076 /* APIRequestStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732B9AB22166704E003D4076 /* APIRequestStub.swift */; };
+		732B9ABF21667144003D4076 /* APIClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732B9AB42166704E003D4076 /* APIClientSpy.swift */; };
+		732B9AC02166723A003D4076 /* URLComponentsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732B9AB82166704E003D4076 /* URLComponentsSpec.swift */; };
+		732B9AC121667249003D4076 /* URLRequestSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732B9AB92166704E003D4076 /* URLRequestSpec.swift */; };
+		732B9AC421667335003D4076 /* RandomUserRequestSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732B9AC321667335003D4076 /* RandomUserRequestSpec.swift */; };
+		732B9AC521667349003D4076 /* APIServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732B9ABA2166704E003D4076 /* APIServiceSpec.swift */; };
+		732B9AC921667552003D4076 /* UserListViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732B9AC721667552003D4076 /* UserListViewControllerSpec.swift */; };
+		732B9ACA21667552003D4076 /* UserListViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732B9AC821667552003D4076 /* UserListViewModelSpec.swift */; };
+		732B9ACE216675D6003D4076 /* UserListViewModelSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732B9ACD216675D6003D4076 /* UserListViewModelSpy.swift */; };
+		732B9AD021667739003D4076 /* ImageProviderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732B9ACF21667739003D4076 /* ImageProviderSpy.swift */; };
+		732B9AD3216679A0003D4076 /* User+Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732B9AD2216679A0003D4076 /* User+Fixtures.swift */; };
+		732B9AD521667A54003D4076 /* UserImage+Fixutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732B9AD421667A54003D4076 /* UserImage+Fixutes.swift */; };
+		732B9AD721667ABD003D4076 /* UserName+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732B9AD621667ABD003D4076 /* UserName+Fixture.swift */; };
+		732B9ADA21667C2D003D4076 /* APIRandomUserServiceSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732B9AD921667C2D003D4076 /* APIRandomUserServiceSpy.swift */; };
+		732B9ADC21667EA9003D4076 /* APIRandomUserServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732B9ADB21667EA9003D4076 /* APIRandomUserServiceSpec.swift */; };
+		732B9ADF21667F71003D4076 /* User+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732B9ADE21667F71003D4076 /* User+Data.swift */; };
+		732B9AE321668974003D4076 /* ApplicationDependenciesProviderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732B9AE221668974003D4076 /* ApplicationDependenciesProviderSpy.swift */; };
+		732B9AE6216694FF003D4076 /* ApplicationDependenciesProviderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732B9AE5216694FF003D4076 /* ApplicationDependenciesProviderSpec.swift */; };
 		733F6EE6216507A7009565E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 733F6EE5216507A7009565E3 /* Assets.xcassets */; };
 		733F6EE9216507A7009565E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 733F6EE7216507A7009565E3 /* LaunchScreen.storyboard */; };
-		733F6EF4216507A7009565E3 /* RandomUserViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733F6EF3216507A7009565E3 /* RandomUserViewerTests.swift */; };
 		73A9864521650C4B00740AE5 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A9861621650C2300740AE5 /* APIError.swift */; };
 		73A9864621650C4F00740AE5 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A9861721650C2300740AE5 /* APIClient.swift */; };
 		73A9864721650C5400740AE5 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A9861821650C2300740AE5 /* APIResponse.swift */; };
@@ -43,7 +64,6 @@
 		73A98673216516CE00740AE5 /* UserImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A98672216516CE00740AE5 /* UserImage.swift */; };
 		73A986782165184100740AE5 /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A986772165184100740AE5 /* ImageProvider.swift */; };
 		73A9867B21651B6100740AE5 /* APIQueryParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A9867A21651B6100740AE5 /* APIQueryParameter.swift */; };
-		73A9867D21651F8600740AE5 /* UserId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A9867C21651F8600740AE5 /* UserId.swift */; };
 		73A9867F2165200A00740AE5 /* UserName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A9867E2165200A00740AE5 /* UserName.swift */; };
 		73A98682216550CC00740AE5 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A98681216550CC00740AE5 /* UserEntity.swift */; };
 /* End PBXBuildFile section */
@@ -59,12 +79,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		732B9AA721667017003D4076 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		732B9AA821667017003D4076 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		732B9AA921667017003D4076 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		732B9AB12166704E003D4076 /* APIURLBuilderStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIURLBuilderStub.swift; sourceTree = "<group>"; };
+		732B9AB22166704E003D4076 /* APIRequestStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestStub.swift; sourceTree = "<group>"; };
+		732B9AB42166704E003D4076 /* APIClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientSpy.swift; sourceTree = "<group>"; };
+		732B9AB82166704E003D4076 /* URLComponentsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLComponentsSpec.swift; sourceTree = "<group>"; };
+		732B9AB92166704E003D4076 /* URLRequestSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestSpec.swift; sourceTree = "<group>"; };
+		732B9ABA2166704E003D4076 /* APIServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceSpec.swift; sourceTree = "<group>"; };
+		732B9AC321667335003D4076 /* RandomUserRequestSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserRequestSpec.swift; sourceTree = "<group>"; };
+		732B9AC721667552003D4076 /* UserListViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListViewControllerSpec.swift; sourceTree = "<group>"; };
+		732B9AC821667552003D4076 /* UserListViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListViewModelSpec.swift; sourceTree = "<group>"; };
+		732B9ACD216675D6003D4076 /* UserListViewModelSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModelSpy.swift; sourceTree = "<group>"; };
+		732B9ACF21667739003D4076 /* ImageProviderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProviderSpy.swift; sourceTree = "<group>"; };
+		732B9AD2216679A0003D4076 /* User+Fixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Fixtures.swift"; sourceTree = "<group>"; };
+		732B9AD421667A54003D4076 /* UserImage+Fixutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserImage+Fixutes.swift"; sourceTree = "<group>"; };
+		732B9AD621667ABD003D4076 /* UserName+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserName+Fixture.swift"; sourceTree = "<group>"; };
+		732B9AD921667C2D003D4076 /* APIRandomUserServiceSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRandomUserServiceSpy.swift; sourceTree = "<group>"; };
+		732B9ADB21667EA9003D4076 /* APIRandomUserServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRandomUserServiceSpec.swift; sourceTree = "<group>"; };
+		732B9ADE21667F71003D4076 /* User+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Data.swift"; sourceTree = "<group>"; };
+		732B9AE221668974003D4076 /* ApplicationDependenciesProviderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDependenciesProviderSpy.swift; sourceTree = "<group>"; };
+		732B9AE5216694FF003D4076 /* ApplicationDependenciesProviderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDependenciesProviderSpec.swift; sourceTree = "<group>"; };
 		733F6EDB216507A6009565E3 /* RandomUserViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUserViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		733F6EE5216507A7009565E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		733F6EE8216507A7009565E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		733F6EEA216507A7009565E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		733F6EEF216507A7009565E3 /* RandomUserViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomUserViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		733F6EF3216507A7009565E3 /* RandomUserViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserViewerTests.swift; sourceTree = "<group>"; };
 		733F6EF5216507A7009565E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73A9861621650C2300740AE5 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		73A9861721650C2300740AE5 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -99,7 +140,6 @@
 		73A98672216516CE00740AE5 /* UserImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImage.swift; sourceTree = "<group>"; };
 		73A986772165184100740AE5 /* ImageProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageProvider.swift; path = ../../../../../Indoorway/Rondo1_iOS/Sources/Commons/Providers/ImageProvider.swift; sourceTree = "<group>"; };
 		73A9867A21651B6100740AE5 /* APIQueryParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIQueryParameter.swift; sourceTree = "<group>"; };
-		73A9867C21651F8600740AE5 /* UserId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserId.swift; sourceTree = "<group>"; };
 		73A9867E2165200A00740AE5 /* UserName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserName.swift; sourceTree = "<group>"; };
 		73A98681216550CC00740AE5 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,12 +161,151 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				732B9AAA21667017003D4076 /* Quick.framework in Frameworks */,
+				732B9AAB21667017003D4076 /* RxTest.framework in Frameworks */,
+				732B9AAC21667017003D4076 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		732B9AAE2166704E003D4076 /* NetworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				732B9AAF2166704E003D4076 /* Doubles */,
+				732B9AB52166704E003D4076 /* Sources */,
+			);
+			path = NetworkTests;
+			sourceTree = "<group>";
+		};
+		732B9AAF2166704E003D4076 /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				732B9AB02166704E003D4076 /* Stubs */,
+				732B9AB32166704E003D4076 /* Spies */,
+			);
+			path = Doubles;
+			sourceTree = "<group>";
+		};
+		732B9AB02166704E003D4076 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				732B9AB12166704E003D4076 /* APIURLBuilderStub.swift */,
+				732B9AB22166704E003D4076 /* APIRequestStub.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		732B9AB32166704E003D4076 /* Spies */ = {
+			isa = PBXGroup;
+			children = (
+				732B9AB42166704E003D4076 /* APIClientSpy.swift */,
+				732B9AD921667C2D003D4076 /* APIRandomUserServiceSpy.swift */,
+			);
+			path = Spies;
+			sourceTree = "<group>";
+		};
+		732B9AB52166704E003D4076 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				732B9AD821667BE7003D4076 /* Services */,
+				732B9AC221667320003D4076 /* Requests */,
+				732B9AB72166704E003D4076 /* Extensions */,
+				732B9ABA2166704E003D4076 /* APIServiceSpec.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		732B9AB72166704E003D4076 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				732B9AB82166704E003D4076 /* URLComponentsSpec.swift */,
+				732B9AB92166704E003D4076 /* URLRequestSpec.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		732B9AC221667320003D4076 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				732B9AC321667335003D4076 /* RandomUserRequestSpec.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		732B9AC62166753E003D4076 /* ScreensTests */ = {
+			isa = PBXGroup;
+			children = (
+				732B9ACB216675C3003D4076 /* Doubles */,
+				732B9AC721667552003D4076 /* UserListViewControllerSpec.swift */,
+				732B9AC821667552003D4076 /* UserListViewModelSpec.swift */,
+			);
+			path = ScreensTests;
+			sourceTree = "<group>";
+		};
+		732B9ACB216675C3003D4076 /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				732B9ADD21667F62003D4076 /* Data */,
+				732B9AD121667992003D4076 /* Fixtures */,
+				732B9ACC216675CA003D4076 /* Spies */,
+			);
+			path = Doubles;
+			sourceTree = "<group>";
+		};
+		732B9ACC216675CA003D4076 /* Spies */ = {
+			isa = PBXGroup;
+			children = (
+				732B9ACD216675D6003D4076 /* UserListViewModelSpy.swift */,
+				732B9ACF21667739003D4076 /* ImageProviderSpy.swift */,
+			);
+			path = Spies;
+			sourceTree = "<group>";
+		};
+		732B9AD121667992003D4076 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				732B9AD2216679A0003D4076 /* User+Fixtures.swift */,
+				732B9AD421667A54003D4076 /* UserImage+Fixutes.swift */,
+				732B9AD621667ABD003D4076 /* UserName+Fixture.swift */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		732B9AD821667BE7003D4076 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				732B9ADB21667EA9003D4076 /* APIRandomUserServiceSpec.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		732B9ADD21667F62003D4076 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				732B9ADE21667F71003D4076 /* User+Data.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		732B9AE021668922003D4076 /* MisTests */ = {
+			isa = PBXGroup;
+			children = (
+				732B9AE12166892E003D4076 /* Dependencies */,
+			);
+			path = MisTests;
+			sourceTree = "<group>";
+		};
+		732B9AE12166892E003D4076 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				732B9AE221668974003D4076 /* ApplicationDependenciesProviderSpy.swift */,
+				732B9AE5216694FF003D4076 /* ApplicationDependenciesProviderSpec.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
 		733F6ED2216507A6009565E3 = {
 			isa = PBXGroup;
 			children = (
@@ -158,7 +337,9 @@
 		733F6EF2216507A7009565E3 /* RandomUserViewerTests */ = {
 			isa = PBXGroup;
 			children = (
-				733F6EF3216507A7009565E3 /* RandomUserViewerTests.swift */,
+				732B9AE021668922003D4076 /* MisTests */,
+				732B9AC62166753E003D4076 /* ScreensTests */,
+				732B9AAE2166704E003D4076 /* NetworkTests */,
 				733F6EF5216507A7009565E3 /* Info.plist */,
 			);
 			path = RandomUserViewerTests;
@@ -341,6 +522,9 @@
 		73A98663216512AD00740AE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				732B9AA921667017003D4076 /* Nimble.framework */,
+				732B9AA721667017003D4076 /* Quick.framework */,
+				732B9AA821667017003D4076 /* RxTest.framework */,
 				73A98666216512AD00740AE5 /* Realm.framework */,
 				73A98668216512AD00740AE5 /* RealmSwift.framework */,
 				73A98667216512AD00740AE5 /* RxCocoa.framework */,
@@ -370,7 +554,6 @@
 			isa = PBXGroup;
 			children = (
 				73A9862721650C2300740AE5 /* User.swift */,
-				73A9867C21651F8600740AE5 /* UserId.swift */,
 				73A98672216516CE00740AE5 /* UserImage.swift */,
 				73A9867E2165200A00740AE5 /* UserName.swift */,
 			);
@@ -405,6 +588,7 @@
 				733F6EEB216507A7009565E3 /* Sources */,
 				733F6EEC216507A7009565E3 /* Frameworks */,
 				733F6EED216507A7009565E3 /* Resources */,
+				732B9AA621666F9D003D4076 /* Carthage copy frameworks */,
 			);
 			buildRules = (
 			);
@@ -474,6 +658,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		732B9AA621666F9D003D4076 /* Carthage copy frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
+			);
+			name = "Carthage copy frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "carthage copy-frameworks\n";
+		};
 		73A9865321650FB200740AE5 /* Carthage Copy Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -534,7 +739,6 @@
 				73A9864C21650DE900740AE5 /* Foundation.URLComponents.swift in Sources */,
 				73A9866F2165138100740AE5 /* UserListViewModel.swift in Sources */,
 				73A986612165120D00740AE5 /* User.swift in Sources */,
-				73A9867D21651F8600740AE5 /* UserId.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,7 +746,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				733F6EF4216507A7009565E3 /* RandomUserViewerTests.swift in Sources */,
+				732B9AD021667739003D4076 /* ImageProviderSpy.swift in Sources */,
+				732B9AC02166723A003D4076 /* URLComponentsSpec.swift in Sources */,
+				732B9AC921667552003D4076 /* UserListViewControllerSpec.swift in Sources */,
+				732B9ABD21667126003D4076 /* APIURLBuilderStub.swift in Sources */,
+				732B9ABF21667144003D4076 /* APIClientSpy.swift in Sources */,
+				732B9AD3216679A0003D4076 /* User+Fixtures.swift in Sources */,
+				732B9ACE216675D6003D4076 /* UserListViewModelSpy.swift in Sources */,
+				732B9AC121667249003D4076 /* URLRequestSpec.swift in Sources */,
+				732B9AC521667349003D4076 /* APIServiceSpec.swift in Sources */,
+				732B9AD721667ABD003D4076 /* UserName+Fixture.swift in Sources */,
+				732B9ADF21667F71003D4076 /* User+Data.swift in Sources */,
+				732B9ADA21667C2D003D4076 /* APIRandomUserServiceSpy.swift in Sources */,
+				732B9AC421667335003D4076 /* RandomUserRequestSpec.swift in Sources */,
+				732B9AE6216694FF003D4076 /* ApplicationDependenciesProviderSpec.swift in Sources */,
+				732B9ABE2166712A003D4076 /* APIRequestStub.swift in Sources */,
+				732B9AD521667A54003D4076 /* UserImage+Fixutes.swift in Sources */,
+				732B9AE321668974003D4076 /* ApplicationDependenciesProviderSpy.swift in Sources */,
+				732B9ACA21667552003D4076 /* UserListViewModelSpec.swift in Sources */,
+				732B9ADC21667EA9003D4076 /* APIRandomUserServiceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -739,6 +961,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7N59SGW2PG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RandomUserViewerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -760,6 +986,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7N59SGW2PG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RandomUserViewerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

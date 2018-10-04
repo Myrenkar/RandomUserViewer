@@ -43,7 +43,7 @@ final class UserListViewController: ViewController {
 
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.hidesNavigationBarDuringPresentation = false
-        searchController.searchBar.placeholder = "Search..."
+        searchController.searchBar.placeholder = "Search for email..."
 
         userListView.tableView.registerClass(UserCell.self)
     }

@@ -3,3 +3,7 @@
 github "realm/realm-cocoa"
 github "RxSwiftCommunity/RxRealm"
 github "ReactiveX/RxSwift" ~> 4.0
+
+#Testing
+github "Quick/Quick"
+github "Quick/Nimble"
