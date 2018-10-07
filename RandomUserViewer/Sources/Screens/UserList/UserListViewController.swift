@@ -10,6 +10,7 @@ final class UserListViewController: ViewController {
     private let viewModel: UserListViewModelProtocol
     private let imageProvider: ImageProviding
     private let searchController: UISearchController
+    private let errorController: ErrorControllerProtocol
 
     private let userListView = UsersListView()
     private let disposeBag = DisposeBag()
@@ -18,11 +19,13 @@ final class UserListViewController: ViewController {
 
     init(viewModel: UserListViewModelProtocol,
          imageProvider: ImageProviding,
-         searchController: UISearchController = UISearchController(searchResultsController: nil)
+         searchController: UISearchController = UISearchController(searchResultsController: nil),
+         errorController: ErrorControllerProtocol
         ) {
         self.searchController = searchController
         self.viewModel = viewModel
         self.imageProvider = imageProvider
+        self.errorController = errorController
         super.init()
     }
 
@@ -84,6 +87,15 @@ final class UserListViewController: ViewController {
                 self.viewModel.update(user: newUser)
             })
             .disposed(by: disposeBag)
+
+        viewModel.error
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { [unowned self] error in
+                guard let error = error else { return }
+                self.errorController.show(error: error, on: self, then: { _ in })
+            })
+            .disposed(by: disposeBag)
+
     }
 }
 

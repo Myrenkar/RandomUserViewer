@@ -31,6 +31,8 @@
 		732B9AE6216694FF003D4076 /* ApplicationDependenciesProviderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732B9AE5216694FF003D4076 /* ApplicationDependenciesProviderSpec.swift */; };
 		733F6EE6216507A7009565E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 733F6EE5216507A7009565E3 /* Assets.xcassets */; };
 		733F6EE9216507A7009565E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 733F6EE7216507A7009565E3 /* LaunchScreen.storyboard */; };
+		73A11813216A147400E50439 /* ErrorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A11812216A147400E50439 /* ErrorController.swift */; };
+		73A11815216A1A2E00E50439 /* ErrorControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A11814216A1A2E00E50439 /* ErrorControllerSpy.swift */; };
 		73A9864521650C4B00740AE5 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A9861621650C2300740AE5 /* APIError.swift */; };
 		73A9864621650C4F00740AE5 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A9861721650C2300740AE5 /* APIClient.swift */; };
 		73A9864721650C5400740AE5 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A9861821650C2300740AE5 /* APIResponse.swift */; };
@@ -107,6 +109,8 @@
 		733F6EEA216507A7009565E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		733F6EEF216507A7009565E3 /* RandomUserViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomUserViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		733F6EF5216507A7009565E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73A11812216A147400E50439 /* ErrorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorController.swift; sourceTree = "<group>"; };
+		73A11814216A1A2E00E50439 /* ErrorControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorControllerSpy.swift; sourceTree = "<group>"; };
 		73A9861621650C2300740AE5 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		73A9861721650C2300740AE5 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		73A9861821650C2300740AE5 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
@@ -259,6 +263,7 @@
 			children = (
 				732B9ACD216675D6003D4076 /* UserListViewModelSpy.swift */,
 				732B9ACF21667739003D4076 /* ImageProviderSpy.swift */,
+				73A11814216A1A2E00E50439 /* ErrorControllerSpy.swift */,
 			);
 			path = Spies;
 			sourceTree = "<group>";
@@ -343,6 +348,15 @@
 				733F6EF5216507A7009565E3 /* Info.plist */,
 			);
 			path = RandomUserViewerTests;
+			sourceTree = "<group>";
+		};
+		73A11811216A145200E50439 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				73A11812216A147400E50439 /* ErrorController.swift */,
+			);
+			name = Controllers;
+			path = Abstractions/Controllers;
 			sourceTree = "<group>";
 		};
 		73A9861B21650C2300740AE5 /* Core */ = {
@@ -497,6 +511,7 @@
 			isa = PBXGroup;
 			children = (
 				73A9863E21650C2300740AE5 /* Abstractions */,
+				73A11811216A145200E50439 /* Controllers */,
 				73A9863021650C2300740AE5 /* Extensions */,
 				73A9862921650C2300740AE5 /* Models */,
 				73A9862421650C2300740AE5 /* Network */,
@@ -709,6 +724,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73A11813216A147400E50439 /* ErrorController.swift in Sources */,
 				73A9864E21650E4200740AE5 /* APIRandomUserService.swift in Sources */,
 				73A9864921650C6800740AE5 /* RandomUserURLBuilder.swift in Sources */,
 				73A9865E216511B500740AE5 /* TableViewCell.swift in Sources */,
@@ -763,6 +779,7 @@
 				732B9ABE2166712A003D4076 /* APIRequestStub.swift in Sources */,
 				732B9AD521667A54003D4076 /* UserImage+Fixutes.swift in Sources */,
 				732B9AE321668974003D4076 /* ApplicationDependenciesProviderSpy.swift in Sources */,
+				73A11815216A1A2E00E50439 /* ErrorControllerSpy.swift in Sources */,
 				732B9ACA21667552003D4076 /* UserListViewModelSpec.swift in Sources */,
 				732B9ADC21667EA9003D4076 /* APIRandomUserServiceSpec.swift in Sources */,
 			);

@@ -4,6 +4,7 @@ import Foundation
 /// Describes a type that is providing application dependencies.
 protocol ApplicationDependenciesProvider {
     var apiClient: APIClient { get }
+    var errorController: ErrorControllerProtocol { get }
     var imageProvider: ImageProviding { get }
     var randomUserService: RandomUserService { get }
     var realm: Realm { get }
@@ -13,6 +14,10 @@ final class DefaultApplicationDependenciesProvider: ApplicationDependenciesProvi
 
     private(set) lazy var apiClient: APIClient = {
        DefaultAPIClient()
+    }()
+
+    lazy var errorController: ErrorControllerProtocol = {
+        ErrorController()
     }()
 
     lazy var imageProvider: ImageProviding = {

@@ -19,7 +19,8 @@ final class ApplicationController {
             viewModel: UserListViewModel(
                 userService: APIRandomUserService(apiClient: dependencies.apiClient),
                 realm: dependencies.realm),
-            imageProvider: dependencies.imageProvider
+            imageProvider: dependencies.imageProvider,
+            errorController: dependencies.errorController
         )
         return UINavigationController(rootViewController: viewController)
     }()

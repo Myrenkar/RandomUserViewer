@@ -7,6 +7,7 @@ final class UserListViewModelSpy: UserListViewModelProtocol {
     // MARK: - Subjects
 
     private(set) var usersSubject = PublishSubject<[User]>()
+    private(set) var errorSubject = PublishSubject<Error?>()
     private(set) var updatedUser: User?
     private(set) var didCallFetchUsers = false
 
@@ -24,5 +25,9 @@ final class UserListViewModelSpy: UserListViewModelProtocol {
 
     func update(user: User) {
         self.updatedUser = user
+    }
+
+    var error: Observable<Error?> {
+        return errorSubject.asObserver()
     }
 }

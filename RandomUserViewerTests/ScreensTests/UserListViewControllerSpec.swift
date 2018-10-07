@@ -20,7 +20,8 @@ class UserListViewControllerSpec: QuickSpec {
                 sut = UserListViewController(viewModel:
                         userListViewModelSpy,
                         imageProvider: ImageProviderSpy(),
-                        searchController: searchControllerStub
+                        searchController: searchControllerStub,
+                        errorController: ErrorControllerSpy()
                     )
 
                 UIApplication.shared.keyWindow!.rootViewController = UINavigationController(rootViewController: sut)

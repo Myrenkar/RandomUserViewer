@@ -5,6 +5,7 @@ import RxRealm
 protocol UserListViewModelProtocol {
     var searchPhrase: PublishSubject<String?> { get }
     var users: Observable<[User]> { get }
+    var error: Observable<Error?> { get }
 
     func fetchUsers()
     func update(user: User)
@@ -17,6 +18,7 @@ final class UserListViewModel: UserListViewModelProtocol {
     private let userService: RandomUserService
     private let realm: Realm
     private let disposeBag = DisposeBag()
+    private let errorSubject = PublishSubject<Error?>()
 
     // MARK: Initialization
 
@@ -38,19 +40,34 @@ final class UserListViewModel: UserListViewModelProtocol {
             }
     }()
 
+    lazy var error: Observable<Error?> = {
+        return errorSubject.asObservable()
+    }()
+
     func fetchUsers() {
         userService.getRandomUsers()
             .map { $0.map{ $0.toUserEntity() } }
             .asObservable()
-            .subscribe(Realm.rx.add(configuration: realm.configuration, update: true, onError: nil))
+            .catchError({ [unowned self] error in
+                self.errorSubject.onNext(error)
+                return .empty()
+            })
+            .subscribe(Realm.rx.add(configuration: realm.configuration, update: true, onError: { [unowned self] (_, error) in
+                self.errorSubject.onNext(error)
+            }))
             .disposed(by: disposeBag)
     }
 
     func update(user: User) {
         let entity = user.toUserEntity()
-        try! realm.write {
-            realm.add(entity, update: true)
+        do {
+            try realm.write {
+                realm.add(entity, update: true)
+            }
+        } catch let error {
+            errorSubject.onNext(error)
         }
+
     }
 
     // MARK: - Private
