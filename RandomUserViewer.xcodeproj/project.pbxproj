@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73146DF7216CAFF7007E4A54 /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73146DF6216CAFF7007E4A54 /* ImageProvider.swift */; };
 		732B9AAA21667017003D4076 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732B9AA721667017003D4076 /* Quick.framework */; };
 		732B9AAB21667017003D4076 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732B9AA821667017003D4076 /* RxTest.framework */; };
 		732B9AAC21667017003D4076 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732B9AA921667017003D4076 /* Nimble.framework */; };
@@ -64,7 +65,6 @@
 		73A98670216513FB00740AE5 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A9863321650C2300740AE5 /* UserCell.swift */; };
 		73A986712165147F00740AE5 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A9863521650C2300740AE5 /* UserListViewController.swift */; };
 		73A98673216516CE00740AE5 /* UserImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A98672216516CE00740AE5 /* UserImage.swift */; };
-		73A986782165184100740AE5 /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A986772165184100740AE5 /* ImageProvider.swift */; };
 		73A9867B21651B6100740AE5 /* APIQueryParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A9867A21651B6100740AE5 /* APIQueryParameter.swift */; };
 		73A9867F2165200A00740AE5 /* UserName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A9867E2165200A00740AE5 /* UserName.swift */; };
 		73A98682216550CC00740AE5 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A98681216550CC00740AE5 /* UserEntity.swift */; };
@@ -81,6 +81,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		73146DF6216CAFF7007E4A54 /* ImageProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProvider.swift; sourceTree = "<group>"; };
 		732B9AA721667017003D4076 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		732B9AA821667017003D4076 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
 		732B9AA921667017003D4076 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
@@ -142,7 +143,6 @@
 		73A98667216512AD00740AE5 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		73A98668216512AD00740AE5 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		73A98672216516CE00740AE5 /* UserImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImage.swift; sourceTree = "<group>"; };
-		73A986772165184100740AE5 /* ImageProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageProvider.swift; path = ../../../../../Indoorway/Rondo1_iOS/Sources/Commons/Providers/ImageProvider.swift; sourceTree = "<group>"; };
 		73A9867A21651B6100740AE5 /* APIQueryParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIQueryParameter.swift; sourceTree = "<group>"; };
 		73A9867E2165200A00740AE5 /* UserName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserName.swift; sourceTree = "<group>"; };
 		73A98681216550CC00740AE5 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
@@ -552,7 +552,7 @@
 		73A986762165182F00740AE5 /* Providers */ = {
 			isa = PBXGroup;
 			children = (
-				73A986772165184100740AE5 /* ImageProvider.swift */,
+				73146DF6216CAFF7007E4A54 /* ImageProvider.swift */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -736,7 +736,6 @@
 				73A9864521650C4B00740AE5 /* APIError.swift in Sources */,
 				73A98670216513FB00740AE5 /* UserCell.swift in Sources */,
 				73A98673216516CE00740AE5 /* UserImage.swift in Sources */,
-				73A986782165184100740AE5 /* ImageProvider.swift in Sources */,
 				73A98660216511FF00740AE5 /* ViewController.swift in Sources */,
 				73A9865B2165118F00740AE5 /* AppDelegate.swift in Sources */,
 				73A98682216550CC00740AE5 /* UserEntity.swift in Sources */,
@@ -745,6 +744,7 @@
 				73A9865C2165119600740AE5 /* ApplicationController.swift in Sources */,
 				73A986622165125100740AE5 /* RandomUsersRequest.swift in Sources */,
 				73A9864721650C5400740AE5 /* APIResponse.swift in Sources */,
+				73146DF7216CAFF7007E4A54 /* ImageProvider.swift in Sources */,
 				73A9864A21650C6B00740AE5 /* APIRequest.swift in Sources */,
 				73A9864F21650E5C00740AE5 /* RandomUserService.swift in Sources */,
 				73A9864621650C4F00740AE5 /* APIClient.swift in Sources */,
